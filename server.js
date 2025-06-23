@@ -3,6 +3,9 @@ import express from 'express';      // If your package.json has "type": "module"
 // OR const express = require('express');  // If you’re using CommonJS (no "type":"module")
 import cors from 'cors';
 import { petRoutes } from './api/pet/pet.routes.js'
+import { userRoutes } from './api/user/user.routes.js'
+import { authRoutes } from './api/auth/auth.routes.js'
+import cookieParser from 'cookie-parser'
 
 const corsOptions = {
     origin: [
@@ -12,10 +15,16 @@ const corsOptions = {
     credentials: true
 };
 const app = express();
-app.use(express.json())
 const port = 3000;
+
+app.use(express.json()) // Enables putting info in request BODY 
+app.use(cookieParser()) // Enables working with cookies
+app.use(express.static('public')) // Enable serving front-end from public folder
 app.use(cors(corsOptions));
 app.use('/api/pet', petRoutes)
+app.use('/api/user', userRoutes)
+app.use('/api/auth', authRoutes)
+
 
 // ----------------------------------------------------------------------
 
@@ -39,3 +48,6 @@ app.get('/ping', (req, res) => {
 app.listen(port, () => {
     console.log(`Example app listening on port ${port}`);
 });
+
+
+
