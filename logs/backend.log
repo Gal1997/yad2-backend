@@ -57,3 +57,164 @@
 23.6.2025, 13:33:46 - INFO - User login: | {"email":"testy@t.t"}
 23.6.2025, 13:40:36 - INFO - User login: | {"email":"galisraeli97@gmail.com"}
 23.6.2025, 14:12:44 - INFO - User login: | {"email":"testy@t.t"}
+24.6.2025, 9:51:44 - ERROR - Failed to Login Invalid password
+24.6.2025, 9:51:54 - INFO - User login: | {"email":"galisraeli97@gmail.com"}
+24.6.2025, 9:52:10 - INFO - User login: | {"email":"galisraeli97@gmail.com"}
+24.6.2025, 10:01:43 - INFO - User login: | {"email":"galisraeli97@gmail.com"}
+24.6.2025, 10:02:44 - INFO - User login: | {"email":"galisraeli97@gmail.com"}
+24.6.2025, 10:03:44 - INFO - User login: | {"email":"galisraeli97@gmail.com"}
+24.6.2025, 10:27:53 - INFO - User login: | {"email":"galisraeli97@gmail.com"}
+24.6.2025, 10:29:57 - INFO - User login: | {"email":"galisraeli97@gmail.com"}
+24.6.2025, 10:41:23 - INFO - User login: | {"email":"galisraeli97@gmail.com"}
+24.6.2025, 10:45:21 - INFO - User login: | {"email":"galisraeli97@gmail.com"}
+24.6.2025, 11:00:00 - INFO - User login: | {"email":"galisraeli97@gmail.com"}
+24.6.2025, 15:28:02 - INFO - User login: | {"email":"galisraeli97@gmail.com"}
+24.6.2025, 19:22:04 - INFO - User login: | {"email":"galisraeli97@gmail.com"}
+30.6.2025, 14:25:44 - ERROR - Failed to Login Invalid password
+30.6.2025, 14:25:52 - ERROR - Failed to Login Invalid password
+30.6.2025, 14:29:21 - ERROR - Failed to Login Invalid password
+30.6.2025, 14:30:09 - ERROR - Failed to Login Invalid password
+30.6.2025, 14:30:35 - ERROR - Failed to Login Invalid password
+30.6.2025, 14:30:50 - ERROR - Failed to Login Invalid password
+30.6.2025, 14:33:09 - ERROR - Failed to Login Invalid password
+30.6.2025, 14:33:23 - ERROR - Failed to Login Unknown email
+30.6.2025, 14:33:49 - ERROR - Failed to Login Invalid password
+30.6.2025, 14:33:52 - ERROR - Failed to Login Unknown email
+30.6.2025, 14:33:55 - ERROR - Failed to Login Invalid password
+30.6.2025, 14:34:32 - INFO - User login: | {"email":"galisraeli97@gmail.com"}
+30.6.2025, 14:38:35 - DEBUG - auth.service - signup with email: galisraeli97@gmail.com
+30.6.2025, 14:38:35 - ERROR - Failed to signup Email already taken
+30.6.2025, 14:38:37 - DEBUG - auth.service - signup with email: galisraeli97@gmail.com
+30.6.2025, 14:38:37 - ERROR - Failed to signup Email already taken
+30.6.2025, 14:38:37 - DEBUG - auth.service - signup with email: galisraeli97@gmail.com
+30.6.2025, 14:38:37 - ERROR - Failed to signup Email already taken
+30.6.2025, 14:38:38 - DEBUG - auth.service - signup with email: galisraeli97@gmail.com
+30.6.2025, 14:38:38 - ERROR - Failed to signup Email already taken
+30.6.2025, 14:38:38 - DEBUG - auth.service - signup with email: galisraeli97@gmail.com
+30.6.2025, 14:38:38 - ERROR - Failed to signup Email already taken
+30.6.2025, 14:38:42 - DEBUG - auth.service - signup with email: galisraeli97@gmail.com
+30.6.2025, 14:38:42 - ERROR - Failed to signup Email already taken
+30.6.2025, 14:38:54 - DEBUG - auth.service - signup with email: galisraeli917@gmail.com
+30.6.2025, 14:38:55 - DEBUG - auth.route - new account created: {"email":"galisraeli917@gmail.com"}
+30.6.2025, 14:38:55 - INFO - User signup: | {"email":"galisraeli917@gmail.com"}
+30.6.2025, 14:39:32 - DEBUG - auth.service - signup with email: galisraeli97@gmail.com
+30.6.2025, 14:39:32 - ERROR - Failed to signup Email already taken
+30.6.2025, 14:40:41 - DEBUG - auth.service - signup with email: galisraeli97@gmail.com
+30.6.2025, 14:40:42 - ERROR - Failed to signup Email already taken
+30.6.2025, 14:43:29 - DEBUG - auth.service - signup with email: galisraeli97@gmail.com
+30.6.2025, 14:43:30 - ERROR - Failed to signup אימייל כבר בשימוש
+30.6.2025, 14:45:16 - DEBUG - auth.service - signup with email: galisraeli97@gmail.com
+30.6.2025, 14:45:16 - ERROR - Failed to signup אימייל כבר בשימוש
+30.6.2025, 14:46:03 - DEBUG - auth.service - signup with email: galisraeli97@gmail.com
+30.6.2025, 14:46:03 - ERROR - Failed to signup אימייל כבר בשימוש
+30.6.2025, 14:46:23 - DEBUG - auth.service - signup with email: galisraeli97@gmail.com
+30.6.2025, 14:46:24 - DEBUG - auth.service - signup with email: galisraeli97@gmail.com
+30.6.2025, 14:46:24 - ERROR - Failed to signup אימייל זה כבר בשימוש
+30.6.2025, 14:46:25 - ERROR - Failed to signup אימייל זה כבר בשימוש
+30.6.2025, 14:46:29 - DEBUG - auth.service - signup with email: galisraeli97@gmail.com
+30.6.2025, 14:46:30 - ERROR - Failed to signup אימייל זה כבר בשימוש
+30.6.2025, 14:46:37 - DEBUG - auth.service - signup with email: galisraeli96@gmail.com
+30.6.2025, 14:46:37 - DEBUG - auth.route - new account created: {"email":"galisraeli96@gmail.com"}
+30.6.2025, 14:46:37 - INFO - User signup: | {"email":"galisraeli96@gmail.com"}
+30.6.2025, 14:49:14 - DEBUG - auth.service - signup with email: galisraeli97@gmail.com
+30.6.2025, 14:49:14 - ERROR - Failed to signup אימייל זה כבר בשימוש
+30.6.2025, 14:49:16 - DEBUG - auth.service - signup with email: galisraeli971@gmail.com
+30.6.2025, 14:49:16 - DEBUG - auth.route - new account created: {"email":"galisraeli971@gmail.com"}
+30.6.2025, 14:49:16 - INFO - User signup: | {"email":"galisraeli971@gmail.com"}
+30.6.2025, 14:50:42 - DEBUG - auth.service - signup with email: galisraeli973@gmail.com
+30.6.2025, 14:50:42 - DEBUG - auth.route - new account created: {"email":"galisraeli973@gmail.com"}
+30.6.2025, 14:50:42 - INFO - User signup: | {"email":"galisraeli973@gmail.com"}
+30.6.2025, 14:51:13 - DEBUG - auth.service - signup with email: galisraeli976@gmail.com
+30.6.2025, 14:51:13 - DEBUG - auth.route - new account created: {"email":"galisraeli976@gmail.com"}
+30.6.2025, 14:51:14 - INFO - User signup: | {"email":"galisraeli976@gmail.com"}
+30.6.2025, 14:55:59 - INFO - User login: | {"email":"galisraeli97@gmail.com"}
+30.6.2025, 14:56:08 - INFO - User login: | {"email":"galisraeli97@gmail.com"}
+30.6.2025, 14:56:23 - DEBUG - auth.service - signup with email: avi@avi.avi
+30.6.2025, 14:56:23 - DEBUG - auth.route - new account created: {"email":"avi@avi.avi"}
+30.6.2025, 14:56:24 - INFO - User signup: | {"email":"avi@avi.avi"}
+30.6.2025, 14:58:18 - DEBUG - auth.service - signup with email: d@d.d
+30.6.2025, 14:58:20 - DEBUG - auth.route - new account created: {"email":"d@d.d"}
+30.6.2025, 14:58:20 - INFO - User signup: | {"id":"68627bdc54656bfd0b9ae42b","email":"d@d.d"}
+30.6.2025, 14:58:58 - DEBUG - auth.service - signup with email: z@z.z
+30.6.2025, 14:59:00 - DEBUG - auth.route - new account created: {"email":"z@z.z"}
+30.6.2025, 14:59:00 - INFO - User signup: | {"email":"z@z.z"}
+30.6.2025, 15:00:18 - INFO - User login: | {"email":"z@z.z"}
+30.6.2025, 15:02:45 - DEBUG - auth.service - signup with email: x@x.x
+30.6.2025, 15:02:45 - DEBUG - auth.route - new account created: {"email":"x@x.x"}
+30.6.2025, 15:02:45 - INFO - User signup: | {"email":"x@x.x"}
+30.6.2025, 15:04:53 - ERROR - Failed to Login Unknown email
+30.6.2025, 15:04:58 - DEBUG - auth.service - signup with email: galisraeli97@gmail.com
+30.6.2025, 15:04:58 - DEBUG - auth.route - new account created: {"email":"galisraeli97@gmail.com"}
+30.6.2025, 15:04:59 - INFO - User signup: | {"email":"galisraeli97@gmail.com"}
+30.6.2025, 15:24:46 - INFO - hiss
+30.6.2025, 15:30:08 - INFO - hiss
+30.6.2025, 15:33:08 - INFO - hiss
+30.6.2025, 15:33:42 - INFO - hiss
+30.6.2025, 15:35:37 - INFO - hiss
+30.6.2025, 15:36:46 - INFO - hiss
+30.6.2025, 15:41:37 - INFO - hiss
+30.6.2025, 15:42:58 - INFO - hiss
+30.6.2025, 15:44:12 - INFO - hiss
+30.6.2025, 15:45:38 - INFO - hiss
+30.6.2025, 15:46:00 - INFO - hiss
+30.6.2025, 15:46:15 - INFO - hiss
+30.6.2025, 15:46:19 - INFO - hiss
+30.6.2025, 15:46:31 - INFO - hiss
+30.6.2025, 19:55:20 - INFO - hiss
+30.6.2025, 19:55:32 - INFO - User login: | {"email":"galisraeli97@gmail.com"}
+30.6.2025, 19:55:32 - INFO - hiss
+30.6.2025, 20:04:41 - INFO - hiss
+30.6.2025, 20:04:55 - INFO - hiss
+30.6.2025, 20:05:28 - INFO - hiss
+30.6.2025, 20:05:47 - INFO - hiss
+30.6.2025, 20:09:03 - INFO - hiss
+30.6.2025, 20:10:03 - INFO - hiss
+30.6.2025, 20:10:51 - INFO - hiss
+30.6.2025, 20:11:25 - INFO - hiss
+30.6.2025, 20:11:54 - INFO - hiss
+30.6.2025, 20:53:23 - INFO - hiss
+30.6.2025, 20:53:26 - INFO - hiss
+30.6.2025, 20:53:30 - INFO - hiss
+30.6.2025, 21:32:36 - INFO - hiss
+30.6.2025, 21:32:45 - INFO - User login: | {"email":"galisraeli97@gmail.com"}
+30.6.2025, 21:32:45 - INFO - hiss
+1.7.2025, 23:14:55 - INFO - hiss
+1.7.2025, 23:15:21 - ERROR - Failed to Login Invalid password
+1.7.2025, 23:15:24 - INFO - User login: | {"email":"galisraeli97@gmail.com"}
+1.7.2025, 23:15:24 - INFO - hiss
+1.7.2025, 23:15:37 - INFO - hiss
+1.7.2025, 23:15:47 - INFO - hiss
+1.7.2025, 23:15:59 - INFO - hiss
+1.7.2025, 23:32:52 - INFO - hiss
+1.7.2025, 23:32:58 - INFO - hiss
+1.7.2025, 23:32:59 - INFO - hiss
+1.7.2025, 23:33:52 - INFO - hiss
+1.7.2025, 23:34:14 - INFO - hiss
+1.7.2025, 23:34:18 - INFO - hiss
+1.7.2025, 23:37:04 - INFO - hiss
+1.7.2025, 23:37:21 - INFO - hiss
+1.7.2025, 23:37:25 - INFO - hiss
+1.7.2025, 23:37:35 - INFO - hiss
+1.7.2025, 23:37:37 - INFO - hiss
+1.7.2025, 23:37:45 - INFO - hiss
+1.7.2025, 23:38:52 - INFO - hiss
+1.7.2025, 23:49:22 - INFO - hiss
+1.7.2025, 23:54:03 - INFO - hiss
+1.7.2025, 23:54:05 - INFO - hiss
+1.7.2025, 23:56:22 - INFO - hiss
+1.7.2025, 23:59:33 - INFO - hiss
+1.7.2025, 23:59:34 - INFO - hiss
+2.7.2025, 0:00:52 - INFO - hiss
+2.7.2025, 0:00:55 - INFO - hiss
+2.7.2025, 0:17:54 - INFO - hiss
+2.7.2025, 0:18:04 - INFO - hiss
+2.7.2025, 0:19:04 - INFO - hiss
+2.7.2025, 0:19:05 - INFO - hiss
+2.7.2025, 0:19:43 - INFO - hiss
+2.7.2025, 0:19:58 - INFO - hiss
+2.7.2025, 0:26:51 - INFO - hiss
+6.7.2025, 17:59:36 - INFO - hiss
+7.7.2025, 19:19:56 - INFO - hiss
+7.7.2025, 19:21:10 - INFO - hiss
+7.7.2025, 19:21:47 - INFO - hiss
+7.7.2025, 19:55:26 - INFO - hiss

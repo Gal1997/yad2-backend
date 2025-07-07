@@ -11,7 +11,7 @@ export async function login(req, res) {
         res.json(user)
     } catch (err) {
         loggerService.error('Failed to Login ' + err)
-        res.status(401).send({ err: 'Failed to Login' })
+        res.status(401).send({ err })
     }
 }
 
@@ -23,13 +23,15 @@ export async function signup(req, res) {
         const account = await authService.signup(credentials)
         loggerService.debug(`auth.route - new account created: ` + JSON.stringify({ id: account.id, email: account.email }))
         const user = await authService.login(email, password)
-        loggerService.info('User signup:', { id: user.id, email: user.email })
+        loggerService.info('User signup:', { email: user.email })
         const loginToken = authService.getLoginToken(user)
+        console.log("login token is ", loginToken);
+
         res.cookie('loginToken', loginToken, { sameSite: 'None', secure: true })
         res.json(user)
     } catch (err) {
         loggerService.error('Failed to signup ' + err)
-        res.status(400).send({ err: 'Failed to signup' })
+        res.status(400).send({ err })
     }
 }
 

@@ -55,7 +55,7 @@ async function signup(credentials) {
     if (!email || !password) throw 'Missing required signup information'
 
     const userExist = await userService.getByEmail(email)
-    if (userExist) throw 'Email already taken'
+    if (userExist) throw 'אימייל זה כבר בשימוש'
 
     const hash = await bcrypt.hash(password, saltRounds)
     return userService.save({ email, password: hash })
