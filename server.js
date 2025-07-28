@@ -7,6 +7,8 @@ import { userRoutes } from './api/user/user.routes.js'
 import { authRoutes } from './api/auth/auth.routes.js'
 import cookieParser from 'cookie-parser'
 import { houseRoutes } from './api/house/house.routes.js';
+import { vehicleRoutes } from './api/vehicle/vehicle.routes.js';
+import { yad2Routes } from './api/yad2/yad2.routes.js';
 
 const corsOptions = {
     origin: [
@@ -26,10 +28,9 @@ app.use('/api/pet', petRoutes)
 app.use('/api/user', userRoutes)
 app.use('/api/auth', authRoutes)
 app.use('/api/house', houseRoutes)
-
-
+app.use('/api/vehicle', vehicleRoutes)
+app.use('/api/yad2', yad2Routes)
 // ----------------------------------------------------------------------
-
 
 // Root route
 // app.get('/', (req, res) => {

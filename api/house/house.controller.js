@@ -3,10 +3,7 @@ import { houseService } from './house.service.js';
 
 export async function getHouses(req, res) {
     try {
-        loggerService.info("hiss")
         const houses = await houseService.query();
-
-
         res.json(houses);
     } catch (err) {
         res.status(500).send('Failed to get houses');
