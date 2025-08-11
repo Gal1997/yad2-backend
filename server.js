@@ -2,7 +2,7 @@
 import express from 'express';      // If your package.json has "type": "module"
 // OR const express = require('express');  // If you’re using CommonJS (no "type":"module")
 import cors from 'cors';
-import { petRoutes } from './api/pet/pet.routes.js'
+
 import { userRoutes } from './api/user/user.routes.js'
 import { authRoutes } from './api/auth/auth.routes.js'
 import cookieParser from 'cookie-parser'
@@ -24,7 +24,6 @@ app.use(express.json()) // Enables putting info in request BODY
 app.use(cookieParser()) // Enables working with cookies
 app.use(express.static('public')) // Enable serving front-end from public folder
 app.use(cors(corsOptions));
-app.use('/api/pet', petRoutes)
 app.use('/api/user', userRoutes)
 app.use('/api/auth', authRoutes)
 app.use('/api/house', houseRoutes)
@@ -45,6 +44,27 @@ app.use('/api/yad2', yad2Routes)
 app.get('/ping', (req, res) => {
     res.json({ justForTesting: "this is the value! and it changessss" });
 });
+
+app.get("/geocode", async (req, res) => {
+    const address = req.query.address;
+    if (!address) {
+        return res.status(400).json({ error: "Missing address" });
+    }
+
+    try {
+        const url = `https://nominatim.openstreetmap.org/search?format=json&q=${encodeURIComponent(address)}`;
+        const response = await fetch(url, {
+            headers: { "User-Agent": "MyApp/1.0" }, // Nominatim requires a UA
+        });
+        const data = await response.json();
+        res.json(data);
+    } catch (err) {
+        console.log("Error");
+
+        res.status(500).json({ error: err.message });
+    }
+});
+
 
 
 // Start the server
