@@ -1,45 +1,37 @@
-// server.js
-import express from 'express';      // If your package.json has "type": "module"
-// OR const express = require('express');  // If you’re using CommonJS (no "type":"module")
+import express from 'express';
 import cors from 'cors';
+import path from "path";
+import { fileURLToPath } from "url";
+import cookieParser from 'cookie-parser';
 
-import { userRoutes } from './api/user/user.routes.js'
-import { authRoutes } from './api/auth/auth.routes.js'
-import cookieParser from 'cookie-parser'
+import { userRoutes } from './api/user/user.routes.js';
+import { authRoutes } from './api/auth/auth.routes.js';
 import { houseRoutes } from './api/house/house.routes.js';
 import { vehicleRoutes } from './api/vehicle/vehicle.routes.js';
 import { yad2Routes } from './api/yad2/yad2.routes.js';
 
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+
+
+
+const app = express();
+
 const corsOptions = {
-    origin: [
-        'http://127.0.0.1:4200',
-        'http://localhost:4200'
-    ],
+    origin: ['http://127.0.0.1:4200', 'http://localhost:4200'],
     credentials: true
 };
-const app = express();
-const port = 3000;
 
-app.use(express.json()) // Enables putting info in request BODY 
-app.use(cookieParser()) // Enables working with cookies
-app.use(express.static('public')) // Enable serving front-end from public folder
+app.use(express.json());
+app.use(cookieParser());
 app.use(cors(corsOptions));
-app.use('/api/user', userRoutes)
-app.use('/api/auth', authRoutes)
-app.use('/api/house', houseRoutes)
-app.use('/api/vehicle', vehicleRoutes)
-app.use('/api/yad2', yad2Routes)
-// ----------------------------------------------------------------------
 
-// Root route
-// app.get('/', (req, res) => {
-//     res.send('<h1>Hello World!</h1>');
-// });
-
-// Another simple route
-// app.get('/bobo', (req, res) => {
-//     res.send('<h1>Hello Bobo!</h1>');
-// });
+// API routes
+app.use('/api/user', userRoutes);
+app.use('/api/auth', authRoutes);
+app.use('/api/house', houseRoutes);
+app.use('/api/vehicle', vehicleRoutes);
+app.use('/api/yad2', yad2Routes);
 
 app.get('/ping', (req, res) => {
     res.json({ justForTesting: "this is the value! and it changessss" });
@@ -47,30 +39,29 @@ app.get('/ping', (req, res) => {
 
 app.get("/geocode", async (req, res) => {
     const address = req.query.address;
-    if (!address) {
-        return res.status(400).json({ error: "Missing address" });
-    }
+    if (!address) return res.status(400).json({ error: "Missing address" });
 
     try {
         const url = `https://nominatim.openstreetmap.org/search?format=json&q=${encodeURIComponent(address)}`;
-        const response = await fetch(url, {
-            headers: { "User-Agent": "MyApp/1.0" }, // Nominatim requires a UA
-        });
+        const response = await fetch(url, { headers: { "User-Agent": "MyApp/1.0" } });
         const data = await response.json();
         res.json(data);
     } catch (err) {
-        console.log("Error");
-
         res.status(500).json({ error: err.message });
     }
 });
 
+app.use(express.static(path.join(__dirname, "public", "gal-yad2", "browser")));
 
-
-// Start the server
-app.listen(port, () => {
-    console.log(`Example app listening on port ${port}`);
+app.get(/.*/, (req, res) => {
+    res.sendFile(path.join(__dirname, "public", "gal-yad2", "browser", "index.html"));
 });
 
 
 
+
+// Start server 
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, () => {
+    console.log(`Server running on port ${PORT}`);
+});
